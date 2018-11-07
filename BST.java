@@ -49,9 +49,9 @@ public class BST
                parent.setRight(newNode);
                m_size++;
             }
-            else{
+            else
                return;
-            }
+            
                
         }
     }
