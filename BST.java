@@ -20,6 +20,15 @@ public class BST
     public void add(int v)
     {
         // TODO: implement this method using a non-recursive solution
+        BSTNode newNode = new BSTNode(v);
+        //check if tree is empty, if it is empty add value as root of tree.
+        if(m_root == null){
+            m_root = newNode;
+            m_size++;
+        }
+        else{
+         
+        }
     }
     
     // print the tree content using in-order traveral
