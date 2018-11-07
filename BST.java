@@ -27,7 +27,32 @@ public class BST
             m_size++;
         }
         else{
-         
+            BSTNode parent = m_root;
+            BSTNode child = m_root;
+            //loop that will traverse through the tree
+            while (child != null){
+               parent = child;
+               
+               if (v < child.getInfo())
+                  child = child.getLeft();
+               else if (v > child.getInfo())
+                  child = child.getRight();
+               else
+                  break;
+            }
+            //adds value into the BST
+            if (v < parent.getInfo()){
+               parent.setLeft(newNode);
+               m_size++;
+            }
+            else if (v > parent.getInfo()){
+               parent.setRight(newNode);
+               m_size++;
+            }
+            else{
+               return;
+            }
+               
         }
     }
     
