@@ -27,7 +27,7 @@ public class BST
             m_size++;
         }
         else{
-            BSTNode nNode = m_root;
+            BSTNode nNode = null;
             BSTNode crawler = m_root;
             //loop that will traverse through the tree
             while (crawler != null){
